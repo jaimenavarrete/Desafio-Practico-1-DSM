@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Ejercicio2Activity extends AppCompatActivity {
+public class Exercise2Activity extends AppCompatActivity {
 
     EditText editTextVotes;
     Button btnSend, btnFinish;

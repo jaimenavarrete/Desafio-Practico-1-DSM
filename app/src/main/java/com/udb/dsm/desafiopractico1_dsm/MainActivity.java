@@ -20,17 +20,17 @@ public class MainActivity extends AppCompatActivity {
         btnEjercicio3 = findViewById(R.id.btnEjercicio3);
 
         btnEjercicio1.setOnClickListener(v -> {
-            Intent i = new Intent(this, Ejercicio1Activity.class);
+            Intent i = new Intent(this, Exercise1Activity.class);
             startActivity(i);
         });
 
         btnEjercicio2.setOnClickListener(v -> {
-            Intent i = new Intent(this, Ejercicio2Activity.class);
+            Intent i = new Intent(this, Exercise2Activity.class);
             startActivity(i);
         });
 
         btnEjercicio3.setOnClickListener(v -> {
-            Intent i = new Intent(this, Ejercicio3Activity.class);
+            Intent i = new Intent(this, Exercise3Activity.class);
             startActivity(i);
         });
     }

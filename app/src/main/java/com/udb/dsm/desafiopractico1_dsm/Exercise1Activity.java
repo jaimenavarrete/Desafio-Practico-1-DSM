@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Ejercicio1Activity extends AppCompatActivity {
+public class Exercise1Activity extends AppCompatActivity {
 
     EditText editTextA, editTextB, editTextC;
     TextView txtResultX1, txtResultX2;
