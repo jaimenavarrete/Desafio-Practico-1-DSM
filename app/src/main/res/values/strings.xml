@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Desafio Practico 1 - DSM</string>
+
+    <string-array name="roles">
+        <item>Gerente</item>
+        <item>Asistente</item>
+        <item>Secretaria</item>
+    </string-array>
 </resources>

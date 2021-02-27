@@ -1,9 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Ejercicio3Activity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CÁLCULO DE SALARIOS LÍQUIDO"
+            android:textAlignment="center"
+            android:textColor="#212121"
+            android:textSize="18dp"
+            android:textStyle="bold"
+
+            android:layout_marginVertical="20dp"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Ingrese los datos del empleado:"
+            android:textColor="#212121"
+            android:textSize="16dp"
+
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Empleado 1:"
+            android:textColor="#212121"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/editTextName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nombre:" />
+        <EditText
+            android:id="@+id/editTextLastName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Apellido:" />
+        <Spinner
+            android:id="@+id/spinnerRole1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="20dp"
+            />
+        <EditText
+            android:id="@+id/editTextYears1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:ems="10"
+            android:hint="Horas trabajadas:"
+            android:inputType="number"
+
+            android:layout_marginBottom="20dp"/>
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Empleado 2:"
+            android:textColor="#212121"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/editTextName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nombre:" />
+        <EditText
+            android:id="@+id/editTextLastName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Apellido:" />
+        <Spinner
+            android:id="@+id/spinnerRole2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="20dp"
+            />
+        <EditText
+            android:id="@+id/editTextYears2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:ems="10"
+            android:hint="Horas trabajadas:"
+            android:inputType="number"
+
+            android:layout_marginBottom="20dp"/>
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Empleado 3:"
+            android:textColor="#212121"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/editTextName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nombre:" />
+        <EditText
+            android:id="@+id/editTextLastName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Apellido:" />
+        <Spinner
+            android:id="@+id/spinnerRole3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="20dp"
+            />
+        <EditText
+            android:id="@+id/editTextYears3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:ems="10"
+            android:hint="Horas trabajadas:"
+            android:inputType="number"
+
+            android:layout_marginBottom="20dp"/>
+
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="CALCULAR SALARIOS" />
+
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Regresar" />
+
+    </LinearLayout>
+
+</ScrollView>
