@@ -16,7 +16,7 @@ public class Exercise3Activity extends AppCompatActivity {
     Spinner spinnerRole1, spinnerRole2, spinnerRole3;
     Button btnSend, btnFinish;
 
-    double hourValue = 9.75, specialHourValue = 11.50, AFP = 0.0688, ISSS = 0.0525, Rent = 0.1;
+    double hourValue = 9.75, specialHourValue = 11.50, ISSS = 0.0525, AFP = 0.0688, Rent = 0.1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class Exercise3Activity extends AppCompatActivity {
 
         btnSend.setOnClickListener(v -> {
             // Employee -> Name - Last Name - Role - Worked hours
-            // EmployeeValues -> Base salary - AFP discount - ISSS discount - Rent discount - Liquid salary
+            // EmployeeValues -> Base salary - AFP discount - ISSS discount - Rent discount - Liquid salary - Bonus - Total Salary
 
             // Employee 1
             String[] employee1 = new String[]{
@@ -102,13 +102,13 @@ public class Exercise3Activity extends AppCompatActivity {
             baseSalary = hours * hourValue;
         }
 
-        AFPDiscount = baseSalary * AFP;
         ISSSDiscount = baseSalary * ISSS;
+        AFPDiscount = baseSalary * AFP;
         RentDiscount = baseSalary * Rent;
 
-        liquidSalary = baseSalary - AFPDiscount - ISSSDiscount - RentDiscount;
+        liquidSalary = baseSalary - ISSSDiscount - AFPDiscount - RentDiscount;
 
-        return new double[]{ round(baseSalary), round(AFPDiscount), round(ISSSDiscount), round(RentDiscount), round(liquidSalary) };
+        return new double[]{ round(baseSalary), round(ISSSDiscount), round(AFPDiscount), round(RentDiscount), round(liquidSalary), 0.0, 0.0 };
     }
 
     private boolean isEmpty(String[] employee) {
